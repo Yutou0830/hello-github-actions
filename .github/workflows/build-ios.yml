@@ -19,6 +19,16 @@ jobs:
           cache: true
       - name: Install Dart SDK
         run: dart --version
+      - name: Install fastlane
+        run: sudo gem install fastlane
+
+      - name: Match certificates and provisioning profiles
+        run: fastlane match development
+
+      - name: Build iOS IPA
+        run: flutter build ipa --release
+
+        
       - name: Build IPA
         run: |
           flutter pub get
