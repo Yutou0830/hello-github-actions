@@ -27,6 +27,7 @@ jobs:
 
       - name: Build iOS IPA
         run: flutter build ipa --release
+fastlane match development --git_url "https://github.com/Yutou0830/your-certificate-repo.git"
 
         
       - name: Build IPA
