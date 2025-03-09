@@ -30,7 +30,7 @@ jobs:
           echo "FASTLANE_PASSWORD=${{ secrets.Kje57611 }}" >> $GITHUB_ENV
 
       - name: Match certificates and provisioning profiles
-        run: fastlane match development --git_url "https://github.com/Yutou0830/your-certificate-repo.git"
+        run: fastlane match development --git_url "https://github.com/Yutou0830/hello-github-actions.git"
 
       - name: Build iOS IPA
         run: |
