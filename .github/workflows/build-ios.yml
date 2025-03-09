@@ -26,8 +26,8 @@ jobs:
 
       - name: Set FASTLANE_USER and FASTLANE_PASSWORD environment variables
         run: |
-          echo "FASTLANE_USER=${{ secrets.1026chen1026@gmail.com }}" >> $GITHUB_ENV
-          echo "FASTLANE_PASSWORD=${{ secrets.Kje57611 }}" >> $GITHUB_ENV
+          echo "1026chen1026@gmail.com=${{ secrets.FASTLANE_USER }}" >> $GITHUB_ENV
+          echo "Kje57611=${{ secrets.FASTLANE_PASSWORD }}" >> $GITHUB_ENV
 
       - name: Match certificates and provisioning profiles
         run: fastlane match development --git_url "https://github.com/Yutou0830/hello-github-actions.git"
